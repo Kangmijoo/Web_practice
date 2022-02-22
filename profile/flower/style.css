@@ -1,0 +1,124 @@
+body {
+  margin: 0;
+}
+#header {
+  width: 100%; /* 너비 */
+  height: 200px; /* 실제 내용이 없으므로 높이 지정 */
+  text-align: center;
+}
+
+audio {
+  position: absolute;
+  right: 0px;
+}
+
+#navi {
+  display: flex;
+  list-style-type: none; /*불릿 없앰*/
+  height: 50px; /*내비 높이*/
+  background: pink; /*내비 색상*/
+  border-radius: 2em; /*내비 모서리 둥글기*/
+  margin-top: -4px;
+  text-decoration: none;
+}
+
+#navi li {
+  float: left; /* 왼쪽부터 표시 */
+  position: relative; /* 위아래 5px, 좌우 10px씩 바깥 여백 */
+  padding-top: 5px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  list-style: none;
+}
+
+#navi li a {
+  display: block; /* 영역을 만듦 */
+  padding: 10px 20px; /* 안여백 */
+  color: white; /* 링크 글자색 */
+  text-decoration: none; /* 밑줄 없앰 */
+  margin: 0px; /* 바깥 여백 없음 */
+  border-radius: 1.4em; /* 링크의 모서리를 둥글게 */
+}
+
+#navi li:hover > a {
+  background: #ffd8d8; /* 배경색 */
+  color: black; /* 글자색 */
+  border-radius: 1.5em; /* 모서리 둥글게 */
+}
+
+#navi ul {
+  margin: 0; /* 서브 메뉴 바깥 여백 없음 */
+  padding: 0; /* 서브 메뉴 안여백 없음 */
+  list-style: none; /* 목록의 불릿 없앰 */
+  position: absolute; /* 고정 위치에 표시 */
+  left: 0; /* 부모 요소와 left 좌표 값은 같게 */
+  top: 50px; /* 부모 요소로부터 아래로 50px 밑에 표시 */
+  width: 150px; /* 서브 메뉴 너비 */
+  background: #ffd8d8; /* 서브 메뉴 배경색 */
+  border: 1px solid gray; /* 서브 메뉴 테두리를 그림 */
+  border-radius: 1em; /* 모서리를 둥글게 처리 */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  display: none; /* 투명하게 표시 - 커서 올려야 보임 */
+}
+
+#navi li:hover ul {
+  display: block; /* 서브 메뉴 보이기 */
+}
+
+#navi ul li {
+  float: none; /* 세로로 표시 */
+  padding: 0px; /* 안 여백 없음 */
+}
+
+#navi ul a {
+  font-weight: normal; /* 진하기 보통으로 */
+  color: black; /* 글자색 */
+}
+
+#navi ul li:hover > a {
+  background: pink; /* 배경색 */
+  color: white; /* 글자색 */
+}
+
+.navi_center {
+  position: relative;
+  width: 800px;
+  left: 50%;
+  margin-left: -400px;
+}
+
+.firstsection {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.firstsection img:hover {
+  transform: scale(1.1);
+}
+
+footer {
+  background: pink;
+  text-align: center;
+  margin-top: 80px;
+  padding: 2px;
+}
+
+.sl {
+  display: flex;
+  justify-content: center;
+  padding: 20px 230px;
+}
+.sl_1,
+.sl_2 {
+  padding: 0px 20px;
+}
+.sl_2 h2 {
+  font-size: 40px;
+}
+
+#container {
+  display: flex;
+  justify-content: center;
+  margin: 90px 40px -80px 40px;
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="p2_style.css">
+    <title>p2-YouTube</title>
+    <script src="https://kit.fontawesome.com/9c1cfddedb.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--헤더(로고, 검색, 메뉴)-->
+    <header>
+        <nav class="navbar">
+            <div class="nav_logo">
+                <i class="fab fa-youtube"></i>
+                <a href="">Youtube</a>
+            </div>
+            <ul class="nav_side">
+                <li><i class="fas fa-search"></i></li>
+                <li><i class="fas fa-ellipsis-v"></i></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--영상, 영상 정보, 프로필-->
+    <section>
+        <div class="playvideo">
+            <iframe src="https://www.youtube.com/embed/o1aa5pU7_tQ" title="YouTube video player" 
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <article>
+            <nav class="profile_info">
+                <ul class="hashtag">
+                    <li><a href="">#DreamCoding</a></li>
+                    <li><a href="">#DreamCoders</a></li>
+                    <li><a href="">#mijoo</a></li>
+                </ul>
+    
+                <ul class="video_name">
+                    <li><a>Clone Coding: Youtube Mobile Website 유튜브 모바일 웹사이트 따라 만들기 | 프론트엔드 개발자 입문편: 
+                        HTML, CSS, Javascrip 드림코딩과 함께하는 프론트엔드 실전 입문편</a></li>
+                    <li><i class="fas fa-caret-down"></i></li>
+                </ul>
+    
+                <div class="video_view">
+                    <a>1M views 1 month ago</a>
+                </div>
+    
+                <ul class="video_like">
+                    <li>
+                        <i class="fas fa-thumbs-up"></i>
+                        <a href="">1K</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-thumbs-down"></i>
+                        <a href="">0</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-share"></i>
+                        <a href="">Share</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-plus"></i>
+                        <a href="">Save</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-flag"></i>
+                        <a href="">Report</a>
+                    </li>
+                </ul>
+                <hr width="100%" style="margin: 0;">
+                <div class="video_profile">
+                    <ul class="profile">
+                        <li><i class="fas fa-user-circle"></i></li>
+                        <ul class="profile_name">
+                            <li class="name"><a href="">Kang mijoo 미주</a></li>
+                            <li class="subscribe"><a href="">구독자 1만명</a></li>
+                        </ul>
+                    </ul>
+                    <a href="">SUBSCRIBE</a>
+                </div>
+                <hr width="100%" style="margin: 0;">
+            </nav>
+        </article>
+    </section>
+
+    <!--추천 영상-->
+    <aside>
+        <a>Up next</a>
+        <ul class="recommend_video">
+            <div id="rc_video">
+                <img src="img1.jpg">
+                <ul id="rc_video_con">
+                    <li id="rc_video_title">프론트엔드 강의, 프론트엔드 개발자가 되고 싶다면? 웹개발 입문자편 강의를 시작합니다. (HTML, CSS, Javascript + 실전 프로젝트)</li>
+                    <li id="rc_video_name">Kang mijoo 미주</li>
+                    <li id="rc_video_view">87K 1week</li>
+                </ul>
+                <div id="rc_video_ham"><i class="fas fa-ellipsis-v"></i></div>
+            </div>
+
+            <div id="rc_video">
+                <img src="img1.jpg">
+                <ul id="rc_video_con">
+                    <li id="rc_video_title">HTML 기초, React 할때 꼭 필요한 팁!(쉽다고 무시하면 안돼요 | 프론트엔드 개발자 입문편 HTML, CSS, Javascript</li>
+                    <li id="rc_video_name">Kang mijoo 미주</li>
+                    <li id="rc_video_view">87K 1week</li>
+                </ul>
+                <div id="rc_video_ham"><i class="fas fa-ellipsis-v"></i></div>
+            </div>
+
+            <div id="rc_video">
+                <img src="img1.jpg">
+                <ul id="rc_video_con">
+                    <li id="rc_video_title">HTML 태그 완성, 웹 포트폴리오 만들기 전에 꼭 보세요 | 프론트엔드 개발자 입문편 HTML, CSS, Javascrip</li>
+                    <li id="rc_video_name">Kang mijoo 미주</li>
+                    <li id="rc_video_view">87K 1week</li>
+                </ul>
+                <div id="rc_video_ham"><i class="fas fa-ellipsis-v"></i></div>
+            </div>
+        </ul>    
+    </aside>
+</body>
+</html>

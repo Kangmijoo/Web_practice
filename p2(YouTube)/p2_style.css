@@ -1,0 +1,170 @@
+body {
+  margin: 0;
+}
+
+/*헤더*/
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(31, 31, 31);
+  padding: 6px 20px;
+  align-items: center;
+}
+.nav_logo {
+  font-size: 20px;
+}
+.nav_logo i {
+  color: red;
+}
+.nav_logo a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 6px 0px;
+  letter-spacing: -1px;
+}
+.nav_side {
+  display: flex;
+  list-style: none;
+  color: white;
+}
+.nav_side li {
+  padding: 0px 4px;
+}
+
+/*미디어*/
+.playvideo {
+  display: flex;
+}
+iframe {
+  width: 100%;
+  height: auto;
+}
+
+/*영상 정보*/
+.profile_info {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 20px;
+}
+.hashtag {
+  display: flex;
+  list-style: none;
+  padding-left: 0px;
+  margin: 8px 0px;
+}
+.hashtag a {
+  text-decoration: none;
+  padding: 0px 12px 0px 0px;
+  color: rgb(42, 113, 255);
+  font-size: 15px;
+}
+
+.video_name {
+  display: flex;
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  justify-content: space-between;
+}
+.fa-caret-down {
+  padding: 4px;
+}
+
+.video_view {
+  font-size: 14px;
+  color: gray;
+  padding: 0px;
+}
+
+/*좋아요*/
+.video_like {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  padding: 8px 0px;
+  margin: 8px 0px;
+}
+.video_like li {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px 0px 20px;
+  align-items: center;
+}
+.video_like i {
+  color: gray;
+  padding: 4px;
+}
+.video_like .fa-thumbs-up {
+  color: rgb(42, 113, 255);
+}
+.video_like a {
+  text-decoration: none;
+  color: #808080;
+}
+
+/*프로필*/
+.video_profile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.video_profile a {
+  text-decoration: none;
+  color: black;
+}
+.video_profile ul {
+  list-style: none;
+}
+.profile {
+  padding-left: 0px;
+  display: flex;
+  align-items: center;
+}
+.fa-user-circle {
+  font-size: 50px;
+}
+.profile_name {
+  padding-left: 0px;
+  display: flex;
+  flex-direction: column;
+  padding: 0px 8px;
+}
+.name {
+  font-weight: bold;
+}
+.subscribe {
+  font-size: 14px;
+  padding: 4px 0px;
+}
+
+/*추천 영상*/
+aside {
+  display: flex;
+  flex-direction: column;
+}
+aside a {
+  padding: 10px 20px 0px 20px;
+}
+.recommend_video {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 20px;
+}
+#rc_video {
+  display: flex;
+  padding: 4px 0px;
+}
+#rc_video_con {
+  list-style: none;
+  padding: 0px 12px;
+}
+#rc_video_name,
+#rc_video_view {
+  font-size: 14px;
+  color: #616161;
+}
+img {
+  width: 180px;
+  height: 120px;
+}
