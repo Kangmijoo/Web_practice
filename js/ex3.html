@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1><a href="ex3.html" style="text-decoration: none;">WEB</a></h1>
+
+    <span>1.</span>
+    <input type="button" value="night" onclick="
+    document.querySelector('body').style.backgroundColor = 'black';
+    document.querySelector('body').style.color = 'white';
+    ">
+    <input type="button" value="day" onclick="
+    document.querySelector('body').style.backgroundColor = 'white';
+    document.querySelector('body').style.color = 'black';    
+    ">
+    
+    <span>2.</span>
+    <input type="button" value="night" onclick="
+        var target = document.querySelector('body').style;
+        if(this.value === 'night') {
+            target.backgroundColor = 'black';
+            target.color = 'white';
+            this.value = 'day';
+
+
+        } else {
+            target.backgroundColor = 'white';
+            target.color = 'black';
+            this.value = 'night';
+
+            
+        }
+    ">
+
+    <ol style="list-style: none;">
+        <li>1. <a href="">HTML</a></li>
+        <li>2. <a href="">CSS</a></li>
+        <li>3. <a href="">JavaScript</a></li>
+    </ol>
+
+    <h2>JavaScript</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Commodi ipsam blanditiis aut voluptates ab, quis consectetur, 
+        voluptatibus quasi eius laudantium quas laboriosam? Rem, unde necessitatibus.
+        Porro, sit! Nobis, non quis?</p>
+</body>
+</html>
