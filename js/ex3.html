@@ -6,6 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<script>
+    function nightDayHandler(self) {
+        var target = document.querySelector('body').style;
+        if(self.value === 'night') {
+            target.backgroundColor = 'black';
+            target.color = 'white';
+            self.value = 'day';
+
+            var alist = document.querySelectorAll('a');
+            var i = 0;
+            while(i < alist.length) {
+                alist[i].style.color = 'powderblue';
+                i = i + 1;
+            }
+        } else {
+            target.backgroundColor = 'white';
+            target.color = 'black';
+            self.value = 'night';
+
+            var alist = document.querySelectorAll('a');
+            var i = 0;
+            while(i < alist.length) {
+                alist[i].style.color = 'blue';
+                i = i + 1;
+            }
+        }
+    }
+</script>
 <body>
     <h1><a href="ex3.html" style="text-decoration: none;">WEB</a></h1>
 
@@ -21,20 +49,11 @@
     
     <span>2.</span>
     <input type="button" value="night" onclick="
-        var target = document.querySelector('body').style;
-        if(this.value === 'night') {
-            target.backgroundColor = 'black';
-            target.color = 'white';
-            this.value = 'day';
-
-
-        } else {
-            target.backgroundColor = 'white';
-            target.color = 'black';
-            this.value = 'night';
-
-            
-        }
+        nightDayHandler(this);
+    ">
+    <span>2-1.</span>
+    <input type="button" value="night" onclick="
+        nightDayHandler(this);
     ">
 
     <ol style="list-style: none;">
